@@ -200,3 +200,11 @@ Students must submit:
 4. A working GitHub Pages link for the deployed movie portal
 5. Evidence that the same responsive design approach was applied to the personalized movie portal
 6. All screenshots must be decorated in the [README.md](README.md) file.
+
+Phone layout (iPhone view) of the personalized Kaiju Movies Portal:
+
+![iPhone Responsive Layout](images/iPhone-View.jpg)
+
+Tablet layout of the personalized Kaiju Movies Portal:
+
+![Tablet Responsive Layout](images/tablet-view.jpg)
