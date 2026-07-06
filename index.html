@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPSC-349 Lab 3: Responsive Movies Portal</title>
+    <title>CPSC-349 Lab 1: Movies Portal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,8 +19,8 @@
     <!-- header: Groups introductory content, branding, and major titles at the top of a page or section -->
     <header>
         <div class="container">
-            <h1>Movies Portal</h1>
-            <p>Welcome to the Movies Portal. Explore movies, genres, ratings, and reviews.</p>
+            <h1>Kaiju Movies Portal</h1>
+            <p>Welcome to Justin's Movies Portal. Explore Godzilla films, genres, ratings, and reviews.</p>
         </div>
     </header>
 
@@ -43,31 +43,78 @@
 
             <div class="movie-grid">
 
-                <!-- article: Defines a self-contained, independent composition like a card, post, or article -->
-                <article class="movie-card">
-                    <h3>The Boys</h3>
-                    <img src="images/the_boys.jpg" alt="The Boys poster" width="200">
-                    <p>A fun and irreverent take on what happens when superheroes abuse their superpowers.</p>
-                    <p><strong>Rating:</strong> 8.7/10</p>
-                    <a class="btn" href="details.html">View Details</a>
-                </article>
+            <!-- article: Defines a self-contained, independent composition like a card, post, or article -->
+            <article class="movie-card">
+                <h3>Godzilla Minus One</h3>
+                <img src="images/godzilla_minus_one.jpg" alt="Godzilla Minus One movie poster" width="200">
+                <p>Set in the aftermath of World War II, a broken Japan must rally together with almost no military
+                    resources to survive a catastrophic Godzilla attack. As much a story about guilt, survival, and
+                    rebuilding as it is a monster movie.</p>
+                <p><strong>Rating:</strong> 9.8/10</p>
 
-                <article class="movie-card">
-                    <h3>Superman</h3>
-                    <img src="images/superman.jpeg" alt="Superman movie poster" width="200">
-                    <p>An upcoming superhero movie following Superman's journey to reconcile his Kryptonian heritage.
-                    </p>
-                    <p><strong>Rating:</strong> 8.5/10</p>
-                    <a class="btn" href="details.html">View Details</a>
-                </article>
+                <!-- video: Native HTML5 element used to embed video files (such as movie trailers) directly with built-in playback controls -->
+                <h4>Trailer</h4>
+                <video controls width="300" poster="images/godzilla_minus_one.jpg">
+                    <source src="videos/godzilla_minus_one_trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
-                <article class="movie-card">
-                    <h3>Avatar: Fire and Ash</h3>
-                    <img src="images/avatar_fire_and_ash.jpeg" alt="Avatar: Fire and Ash movie poster" width="200">
-                    <p>The next chapter in the Avatar franchise exploring the new ash people of Pandora.</p>
-                    <p><strong>Rating:</strong> 8.9/10</p>
-                    <a class="btn" href="details.html">View Details</a>
-                </article>
+                <!-- audio: Native HTML5 element used to embed audio files (such as soundtrack themes) directly with built-in playback controls -->
+                <h4>Theme Song</h4>
+                <audio controls>
+                    <source src="audios/godzilla_minus_one_theme.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+
+                <br><br>
+                <a class="btn" href="details.html">View Details</a>
+            </article>
+
+            <article class="movie-card">
+                <h3>Shin Godzilla</h3>
+                <img src="images/shin_godzilla.png" alt="Shin Godzilla movie poster" width="200">
+                <p>A biting satire of Japanese government bureaucracy wrapped inside a kaiju film. Godzilla evolves
+                    mid-movie into increasingly terrifying forms while committees argue over jurisdiction.</p>
+                <p><strong>Rating:</strong> 9.2/10</p>
+
+                <h4>Trailer</h4>
+                <video controls width="300" poster="images/shin_godzilla.png">
+                    <source src="videos/shin_godzilla_trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <h4>Theme Song</h4>
+                <audio controls>
+                    <source src="audios/shin_godzilla_theme.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+
+                <br><br>
+                <a class="btn" href="details.html">View Details</a>
+            </article>
+
+            <article class="movie-card">
+                <h3>Godzilla, Mothra and King Ghidorah: Giant Monsters All-Out Attack (GMK)</h3>
+                <img src="images/gmk.jpg" alt="GMK movie poster showing Godzilla, Mothra, and King Ghidorah" width="200">
+                <p>Godzilla is reimagined as a vengeful, near-unstoppable force of nature while Japan's guardian
+                    monsters Mothra, Baragon, and King Ghidorah team up to stop him. Big scale, big monster fights.</p>
+                <p><strong>Rating:</strong> 8.9/10</p>
+
+                <h4>Trailer</h4>
+                <video controls width="300" poster="images/gmk.jpg">
+                    <source src="videos/gmk_trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <h4>Theme Song</h4>
+                <audio controls>
+                    <source src="audios/gmk_theme.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+
+                <br><br>
+                <a class="btn" href="details.html">View Details</a>
+            </article>
             </div>
         </section>
 
@@ -76,11 +123,12 @@
 
             <!-- ul: Defines an unordered (bulleted) list of items -->
             <ul>
-                <li>Action</li>
-                <li>Comedy</li>
-                <li>Drama</li>
+                <li>Kaiju</li>
+                <li>Disaster</li>
                 <li>Science Fiction</li>
-                <li>Horror</li>
+                <li>War Drama</li>
+                <li>Political Satire</li>
+                <li>Action</li>
             </ul>
         </section>
 
@@ -101,21 +149,21 @@
 
                     <tbody>
                         <tr>
-                            <td>The Boys</td>
-                            <td>Action / Sci-Fi</td>
-                            <td>2019</td>
-                            <td>8.7</td>
+                            <td>Godzilla Minus One</td>
+                            <td>War Drama / Kaiju</td>
+                            <td>2023</td>
+                            <td>9.8</td>
                         </tr>
                         <tr>
-                            <td>Superman</td>
-                            <td>Action / Sci-Fi</td>
-                            <td>2025</td>
-                            <td>8.5</td>
+                            <td>Shin Godzilla</td>
+                            <td>Political Satire / Kaiju</td>
+                            <td>2016</td>
+                            <td>9.2</td>
                         </tr>
                         <tr>
-                            <td>Avatar: Fire and Ash</td>
-                            <td>Science Fiction</td>
-                            <td>2025</td>
+                            <td>Godzilla, Mothra and King Ghidorah: GMK</td>
+                            <td>Action / Kaiju</td>
+                            <td>2001</td>
                             <td>8.9</td>
                         </tr>
                     </tbody>
@@ -125,21 +173,21 @@
 
         <section id="reviews" class="section">
             <h2>Submit a Movie Review (Available Soon)</h2>
-            <p><strong>Status:</strong> This feature is under development and will be available soon!</p>
+            <p class="status-banner"><strong>Status:</strong> This feature is under development and will be available soon!</p>
 
             <!-- form: Wraps interactive controls to capture and submit user input -->
             <form action="#" method="post">
                 <!-- label: Provides a text label linked directly to a form control for accessibility -->
-                <label>Movie Title:</label>
+                <label for="movie-title">Movie Title:</label>
                 <br>
                 <!-- input: Creates basic interactive fields to capture user text or button clicks -->
-                <input type="text" placeholder="Coming soon..." disabled>
+                <input type="text" id="movie-title" name="movie-title" placeholder="Coming soon..." disabled>
                 <br><br>
 
-                <label>Rating:</label>
+                <label for="rating">Rating:</label>
                 <br>
                 <!-- select: Creates a drop-down menu for selecting from multiple options -->
-                <select disabled>
+                <select id="rating" name="rating" disabled>
                     <option value="5">5 - Excellent</option>
                     <option value="4">4 - Good</option>
                     <option value="3">3 - Average</option>
@@ -151,7 +199,8 @@
                 <label for="review">Your Review:</label>
                 <br>
                 <!-- textarea: Provides a multi-line text input control suitable for longer text entries -->
-                <textarea rows="5" cols="40" placeholder="Write review here once available..." disabled></textarea>
+                <textarea id="review" name="review" rows="5" cols="40" placeholder="Write review here once available..."
+                    disabled></textarea>
                 <br><br>
 
                 <input class="btn" type="submit" value="Submit Review" disabled>
@@ -162,7 +211,7 @@
 
     <!-- footer: Contains concluding page details such as copyright notices and contact information -->
     <footer id="contact">
-        <p>&copy; 2026 Movies Portal</p>
+        <p>&copy; 2026 Kaiju Movies Portal</p>
         <p>Contact us at <a href="mailto:movies@example.com">movies@cspc349.com</a></p>
     </footer>
 
